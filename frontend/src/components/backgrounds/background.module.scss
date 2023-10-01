@@ -1,0 +1,32 @@
+
+.main {
+    display: flex;
+    position: relative;
+}
+
+.back {
+    display: flex;
+    position: relative;
+
+}
+
+.child {position: relative;
+    z-index: 1;
+}
+
+// .back span {
+//     position: relative;
+//     width: 30px;
+//     height: 30px;
+//     background: #fff;
+// }
+
+.circle {
+
+    &_orange {
+        position: relative;
+        width: 440px;
+        height: 395px;
+        background: radial-gradient(farthest-side, rgba(219, 132, 52, 0.5), rgba(219, 132, 52, 0));
+    }
+}
