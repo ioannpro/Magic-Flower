@@ -1,0 +1,33 @@
+
+
+.intro {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+    width: 1110px;
+    height: 1518px;
+    background: url('/intro-bg.png') center no-repeat;
+	background-size: cover;
+
+    &__title {
+        position: absolute;
+        top: 295px;
+        left: 0;
+        // overflow: hidden;
+
+        width: 100vw;
+
+        font-size: 128px;
+        font-weight: 500;
+        letter-spacing: 0.175em;
+        text-align: center;
+        white-space: nowrap;
+
+        text-transform: uppercase;
+        color: #fff;
+
+        z-index: 2;
+
+    }
+}

@@ -1,25 +1,30 @@
 
 .main {
-    display: flex;
     position: relative;
+    min-width: 100%;
 }
 
 .back {
     display: flex;
     position: relative;
-
+    
 }
 
-.child {position: relative;
+.child {
+    position: relative;
     z-index: 1;
+
+    &_intro {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        z-index: 1;
+    }
 }
 
-// .back span {
-//     position: relative;
-//     width: 30px;
-//     height: 30px;
-//     background: #fff;
-// }
 
 .circle {
 
@@ -28,5 +33,12 @@
         width: 440px;
         height: 395px;
         background: radial-gradient(farthest-side, rgba(219, 132, 52, 0.5), rgba(219, 132, 52, 0));
+    }
+
+    &_red {
+        position: relative;
+        width: 525px;
+        height: 525px;
+        background: radial-gradient(farthest-side, rgba(242, 64, 64, 0.38), rgba(242, 64, 64, 0));
     }
 }
