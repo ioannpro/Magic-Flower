@@ -1,11 +1,10 @@
+'use client'
 import './globals.scss'
-import type { Metadata } from 'next'
+
+import { Provider } from 'react-redux'
+import { store } from '@/store/store'
 
 
-export const metadata: Metadata = {
-  title: 'Magic Flower - Magic in every flower ',
-  description: 'Buy your magic bouquet at Magic Flower!',
-}
 
 export default function RootLayout({
   children,
@@ -15,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Provider store={store}>{children}</Provider>
       </body>
     </html>
   )
