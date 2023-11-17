@@ -1,0 +1,94 @@
+
+.card {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-bottom: rgba(#fff, .4) 1px solid;
+
+    &__product {
+        display: flex;
+        width: 45%;
+    }
+
+    &__img {
+        position: relative;
+        width: 140px;
+        height: 210px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+
+    &__recipe {
+        padding-left: 50px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    &__price {
+        width: 10%;
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+
+    &__quantity {
+        display: flex;
+        justify-content: center;
+        width: 35%;
+
+        &__inner {
+            display: flex;
+            padding: 0 8px;
+            justify-content: space-between;
+            align-items: center;
+            width: 82px;
+            height: 22px;
+            
+            border: #fff 1px solid;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        &__btn {
+            color: #fff;
+        }
+    }
+
+    &__total {
+        width: 15%;
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+
+    &__remove{
+        width: 5%;
+        text-align: center;
+        cursor: pointer;
+
+        &__icon {
+            width: 36px;
+            height: 36px;
+            fill: rgba(#fff, .5);
+            
+            transition: all .2s linear;
+
+            &:hover {
+                fill: #fff;
+            }
+        }
+    }
+}

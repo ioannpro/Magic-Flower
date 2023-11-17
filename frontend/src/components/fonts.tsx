@@ -1,5 +1,4 @@
-import { Playfair_Display } from 'next/font/google'
-import { Hind } from 'next/font/google'
+import { Playfair_Display, Hind, Rubik } from 'next/font/google'
 
 export const playfair_display = Playfair_Display({
     subsets: ['latin'],
@@ -8,6 +7,9 @@ export const playfair_display = Playfair_Display({
 
 export const hind = Hind ({
     subsets: ['latin'],
-    display: 'swap',
-    weight: '300'
+    weight: ['300', '400', '600']
+})
+
+export const rubik = Rubik({
+    subsets: ['latin']
 })

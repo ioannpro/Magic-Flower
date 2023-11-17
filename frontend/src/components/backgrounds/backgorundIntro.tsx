@@ -20,7 +20,7 @@ export default function BackgroundIntro({children}: any) {
                         
                     </motion.div>
                 </Container>
-                <div className={style.child_intro}>{children}</div>
+                <div className={style.child}>{children}</div>
             </div>
         )
 }

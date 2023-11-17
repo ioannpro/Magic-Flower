@@ -1,0 +1,35 @@
+
+.header {
+    margin-top: 10px;
+    height: 64px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav {
+    align-items: center;
+    
+    &__link {
+        margin-left: 36px;
+        color: #fff;
+        font-weight: 200;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.logo {
+    height: 64px;
+    width: 64px;
+    fill: #fff;
+}
+
+.user {
+    height: 32px;
+    width: 32px;
+    fill: #fff;
+}

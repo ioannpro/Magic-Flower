@@ -1,0 +1,82 @@
+$active_color: #EF772E;
+$active_color_fon1: #ef8b4d;
+$active_color_fon2: #ef6b18;
+$active_color_fon3:rgb(248, 224, 209);
+$active_color_fon4: #ff6200;
+
+
+.item {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    cursor: pointer;
+    
+
+    &__img {
+        position: relative;
+        width: 255px;
+        height: 340px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+
+    &__title {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__price {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: #fff;
+    }
+
+    &__btn {
+        margin-top: 15px;
+        padding: 13px 35px;
+        max-width: 190px;
+        max-height: 50px;
+        
+
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        border: #fff 2px solid;
+        border-radius: 10px;
+        color: #fff;
+
+        transition: all .3s linear;
+
+        &:hover {
+            font-weight: 600;
+            background-color: $active_color;
+            border-color: $active_color;
+            box-shadow: 0 0 0 0.4rem rgba($active_color_fon4, 0.25);
+            
+            transition: all .3s linear;
+            
+        }
+    }
+}
+
+.cart {
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+	.item {
+        margin-left: 0;
+	}
+}
